@@ -69,3 +69,73 @@
 ### Review
 - [ ] Take a final look at the code for anything missed.
 - [ ] Prepare to explain your reasoning and decisions during the interview.
+
+# Android Kotlin Code Review Checklist
+
+## Pre-Review Preparation
+
+### Familiarize with Tools
+- [ ] Get accustomed to any code review tools that may be used (e.g., Gerrit, Crucible).
+- [ ] Prepare a code review template or checklist to jot down your observations.
+
+---
+
+## Initial Codebase Assessment
+
+### High-Level Overview
+- [ ] Review the architecture and design patterns used in the project.
+- [ ] Look for architectural smells or inconsistencies.
+  
+### Dependencies and Build
+- [ ] Check `build.gradle` files for outdated or unnecessary dependencies.
+- [ ] Note if there are custom build configurations or scripts.
+
+### Documentation
+- [ ] Examine the presence and quality of documentation (comments, README, Wiki).
+  
+---
+
+## Deep Dive into Code
+
+### Kotlin Best Practices
+- [ ] Check the usage of Kotlin idioms and language features.
+- [ ] Look for appropriate null-safety handling.
+
+### Android Specifics
+- [ ] Assess the usage of Android components (Activity, Service, etc.).
+- [ ] Examine the use of Android Jetpack libraries and AndroidX.
+
+### Code Quality
+- [ ] Look for code smells like large methods/classes, tight coupling, etc.
+- [ ] Identify any anti-patterns or bad practices.
+  
+### Error Handling and Logging
+- [ ] Check how errors and exceptions are handled.
+- [ ] Verify that sensitive information is not logged.
+
+### Asynchronous Code
+- [ ] Examine the use of asynchronous mechanisms like Coroutines, RxJava, etc.
+- [ ] Look for potential thread-safety issues or race conditions.
+
+---
+
+## Performance and Optimization
+
+### Resource Utilization
+- [ ] Check for any leaks (memory, file handles, etc.)
+- [ ] Look for inefficient use of resources (CPU, disk, network).
+
+### Algorithmic Efficiency
+- [ ] Identify inefficient algorithms or data structures.
+
+---
+
+## Final Review Steps
+
+### Notes and Recommendations
+- [ ] Jot down your notes and prepare recommendations.
+  
+### Prepare for Discussion
+- [ ] Be prepared to discuss your findings constructively.
+- [ ] Have alternative solutions and explanations for your recommendations.
+
